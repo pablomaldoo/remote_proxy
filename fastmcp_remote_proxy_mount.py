@@ -37,8 +37,8 @@ main_mcp.add_middleware(DetailedTimingMiddleware())
 # -----------------------------------------------------------------------------------------
 
 # Mount the remote MCP servers into the main MCP server
-main_mcp.mount(geo_remote, prefix="geo")
-main_mcp.mount(weather_remote, prefix="weather")
+main_mcp.mount(geo_remote)
+main_mcp.mount(weather_remote)
 
 # -----------------------------------------------------------------------------------------
 
