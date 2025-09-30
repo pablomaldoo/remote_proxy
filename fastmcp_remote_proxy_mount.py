@@ -21,8 +21,8 @@ logging.basicConfig(
 # from mcp_weather_http import mcp as weather_mcp
 
 # Crear proxies para los servidores remotos
-geo_remote = FastMCP.as_proxy(Client("http://localhost:3000/mcp"))
-weather_remote = FastMCP.as_proxy(Client("http://localhost:3001/mcp"))
+geo_remote = FastMCP.as_proxy(Client("https://geohttp.fastmcp.app/mcp"))
+weather_remote = FastMCP.as_proxy(Client("https://weatherhttp.fastmcp.app/mcp"))
 
 # -----------------------------------------------------------------------------------------
 
